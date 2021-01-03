@@ -1,0 +1,136 @@
+// header
+#header {
+  &-about {
+    background: $bg-img no-repeat center;
+    height: 10vh;
+    color: #fff;
+    border-bottom: 3px solid $primary-color;
+  }
+}
+
+// about-a
+#about-a {
+  color: $dark-color;
+
+  .container {
+    h2 {
+      font-size: 2rem;
+    }
+    .items {
+      display: flex;
+      height: 30vh;
+
+      .item-1 {
+        flex: 1;
+        background: url(../img/about.jpg) no-repeat center
+          center/cover;
+      }
+
+      .item-2 {
+        margin-left: 1rem;
+        padding: 2rem;
+        border-left: 3px solid $primary-color;
+        flex: 2;
+        background: $light-gray-color;
+      }
+    }
+
+    .icons {
+      display: flex;
+
+      .icon {
+        flex: 1;
+
+        i {
+          font-size: 4rem;
+          color: $primary-color;
+          padding-bottom: 1rem;
+        }
+
+        h4 {
+          font-size: 1.2rem;
+          padding-bottom: 0.3rem;
+        }
+      }
+    }
+  }
+}
+
+// about-b
+#about-b {
+  color: $light-color;
+  .progress {
+    overflow: hidden;
+    height: 1.2rem;
+    width: 100%;
+    background: $dark-gray-color;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+
+    div {
+      background-color: $primary-color;
+      height: 100%;
+    }
+  }
+}
+
+// about-c
+#about-c {
+  background: $light-gray-color;
+  .container {
+    display: flex;
+  }
+  .item {
+    padding: 2rem;
+    flex: 1;
+  }
+}
+
+// about-d
+#about-d {
+  .container {
+    color: $dark-color;
+
+    .top {
+      h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+      }
+    }
+
+    .items {
+      display: flex;
+
+      .item {
+        padding: 0.5rem;
+        flex: 1;
+
+        p {
+          margin-bottom: 0.5rem;
+          padding: 0.5rem;
+          border: 1px solid $dark-gray-color;
+          border-radius: 20px;
+        }
+
+        div {
+          display: flex;
+          align-items: center;
+          div {
+            flex: 1;
+          }
+          img {
+            border-radius: 100%;
+          }
+
+          h5 {
+            flex: 2;
+            padding-left: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}

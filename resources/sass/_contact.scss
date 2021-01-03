@@ -1,0 +1,63 @@
+// section contact-a
+#contact-a {
+  .container {
+    form {
+      display: grid;
+      grid-template-areas:
+        "name email" "subject phone"
+        "message message" "submit submit";
+      grid-gap: 1rem;
+
+      input {
+        padding: 0.6rem;
+      }
+
+      #name {
+        grid-area: name;
+      }
+      #email {
+        grid-area: email;
+      }
+      #subject {
+        grid-area: subject;
+      }
+      #phone {
+        grid-area: phone;
+      }
+      #message {
+        grid-area: message;
+      }
+      #submit {
+        grid-area: submit;
+      }
+    }
+  }
+}
+
+// contact-b
+#contact-b {
+  background: $dark-color;
+  color: $light-color;
+
+  .continer {
+    display: flex;
+
+    .item {
+      flex: 1;
+
+      i {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+// contact-c
+#contact-c {
+  background: $primary-color;
+  color: $light-color;
+
+  .section-title {
+    font-size: 4rem;
+  }
+}

@@ -1,0 +1,160 @@
+// mobile
+@media (max-width: 800px) {
+  // main nav
+  #main-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // header
+  #header {
+    &-home {
+      height: 25vh;
+      border-bottom: 3px solid $primary-color;
+
+      //header content
+      .header-content {
+        display: none;
+      }
+    }
+  }
+
+  // section home-a
+  #home-a {
+    .items {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  // section home-b
+  #home-b {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .item {
+      padding: 3rem;
+    }
+  }
+
+  // section home-c
+  #home-c {
+    .items {
+      flex-direction: column;
+    }
+  }
+
+  // header
+  #header {
+    &-about {
+      height: 25vh;
+      border-bottom: 3px solid $primary-color;
+    }
+  }
+
+  // about-a
+  #about-a {
+    .container {
+      .items {
+        margin-bottom: 14rem;
+        flex-direction: column;
+
+        .item-1 {
+          margin-bottom: 1rem;
+          padding: 5rem 0;
+        }
+
+        .item-2 {
+          margin-left: 0;
+        }
+      }
+
+      .icons {
+        flex-direction: column;
+      }
+    }
+  }
+
+  // about-c
+  #about-c {
+    .container {
+      flex-direction: column;
+    }
+  }
+
+  // about-d
+  #about-d {
+    .container {
+      .items {
+        display: flex;
+        flex-direction: column;
+
+        .item {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+
+  #work-a {
+    .container {
+      .items {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+
+  // section contact-a
+  #contact-a {
+    .container {
+      form {
+        grid-template-areas:
+          "name" "email" "subject" " phone"
+          "message " " submit";
+
+        #name {
+          grid-area: name;
+        }
+        #email {
+          grid-area: email;
+        }
+        #subject {
+          grid-area: subject;
+        }
+        #phone {
+          grid-area: phone;
+        }
+        #message {
+          grid-area: message;
+        }
+        #submit {
+          grid-area: submit;
+        }
+      }
+    }
+  }
+
+  // contact-b
+  #contact-b {
+    .continer {
+      display: flex;
+      flex-direction: column;
+
+      .item {
+        margin-bottom: 2rem;
+
+        i {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+
+  // contact-c
+  #contact-c {
+    .section-title {
+      font-size: 2rem;
+    }
+  }
+}
